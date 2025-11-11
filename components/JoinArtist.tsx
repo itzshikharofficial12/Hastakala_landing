@@ -22,13 +22,30 @@ const JoinArtist: React.FC = () => {
     };
 
     return (
-        <section id="join-as-artist" className="py-24 bg-brand-brown/10">
-            <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    {/* Left side: Why join */}
-                    <div className="space-y-6">
-                        <h2 className="text-4xl font-serif font-bold">Join as an Artisan Partner</h2>
-                        <p className="text-gray-700 leading-relaxed">
+        <section id="join-as-artist" className="relative py-24 overflow-hidden">
+            {/* Background Image */}
+            <div 
+                className="absolute inset-0 z-0"
+                style={{
+                    backgroundImage: "url('Assests/Join as a Artist.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    height: '100%',
+                    width: '100%'
+                }}
+            />
+            
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/25 z-0"></div>
+            
+            <div className="relative z-10">
+                <div className="container mx-auto px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        {/* Left side: Why join */}
+                        <div className="space-y-6 text-black">
+                            <h2 className="text-4xl font-serif font-bold">Join as an Artisan Partner</h2>
+                            <p className="text-black/90 leading-relaxed">
                             Are you an Indian artisan dedicated to your craft? We want to help you share your story with the world. Join Hastakala to get the platform, support, and fair value you deserve.
                         </p>
                         <ul className="space-y-3 font-normal">
@@ -48,7 +65,7 @@ const JoinArtist: React.FC = () => {
                     </div>
 
                     {/* Right side: Form */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200/60">
+                    <div className="bg-white/90 p-8 rounded-lg shadow-xl backdrop-blur-sm border border-white/20">
                         {submitted ? (
                              <div className="text-center py-12">
                                 <h3 className="text-2xl font-serif font-bold text-brand-dark mb-3">Thank You!</h3>
@@ -81,7 +98,8 @@ const JoinArtist: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     );
 };
 

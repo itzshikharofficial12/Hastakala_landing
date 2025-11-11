@@ -32,12 +32,12 @@ const faqData: FAQItem[] = [
 
 const AccordionItem: React.FC<{ item: FAQItem; isOpen: boolean; onClick: () => void }> = ({ item, isOpen, onClick }) => {
     return (
-        <div className={`border-b border-gray-200 ${isOpen ? 'border-l-2 border-r-2 border-t-2 border-black' : 'hover:border-l hover:border-r hover:border-t hover:border-black/30'}`}>
+        <div className={`border-b border-white/20 ${isOpen ? 'border-l-2 border-r-2 border-t-2 border-brand-brown' : 'hover:border-l hover:border-r hover:border-t hover:border-brand-brown/50'}`}>
             <button
                 onClick={onClick}
                 className="w-full flex justify-between items-center text-left py-4 px-4 transition-all duration-200"
             >
-                <span className="font-serif font-bold text-gray-700">{item.question}</span>
+                <span className="font-serif font-bold text-gray-900">{item.question}</span>
                 <span className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
                     <ChevronDownIcon />
                 </span>
@@ -45,7 +45,7 @@ const AccordionItem: React.FC<{ item: FAQItem; isOpen: boolean; onClick: () => v
             <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'}`}
             >
-                <div className="px-4 pb-4 text-gray-700 border-t border-gray-100 mt-2 pt-4">
+                <div className="px-4 pb-4 text-gray-800 border-t border-white/20 mt-2 pt-4">
                     {item.answer}
                 </div>
             </div>
@@ -54,25 +54,45 @@ const AccordionItem: React.FC<{ item: FAQItem; isOpen: boolean; onClick: () => v
 };
 
 const FAQ: React.FC = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     const handleClick = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
     return (
-        <section className="py-24 bg-brand-bg">
-            <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-serif font-bold text-center mb-12">Frequently Asked</h2>
-                <div className="max-w-3xl mx-auto">
-                    {faqData.map((item, index) => (
-                        <AccordionItem
-                            key={index}
-                            item={item}
-                            isOpen={openIndex === index}
-                            onClick={() => handleClick(index)}
-                        />
-                    ))}
+        <section className="relative py-24 overflow-hidden">
+            {/* Background Image */}
+            <div 
+                className="absolute inset-0 z-0"
+                style={{
+                    backgroundImage: "url('Assets/FAQs.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    height: '100%',
+                    width: '100%'
+                }}
+            />
+            
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/25 z-0"></div>
+            
+            <div className="relative z-10">
+                <div className="container mx-auto px-6">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-4xl font-serif font-bold text-center mb-12 text-black">Frequently Asked Questions</h2>
+                        <div className="space-y-2 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-6">
+                            {faqData.map((item, index) => (
+                                <AccordionItem
+                                    key={index}
+                                    item={item}
+                                    isOpen={openIndex === index}
+                                    onClick={() => handleClick(index)}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
