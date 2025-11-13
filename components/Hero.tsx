@@ -157,7 +157,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1646318839633-7a1788cf45af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                src="https://media.istockphoto.com/id/1193642393/photo/female-needlework-on-fabric-material-close-up-view-unidentified-tribal-women-sewing-ethnic.webp?a=1&b=1&s=612x612&w=0&k=20&c=krPFJyg5oLIDHiEjmbfHCnGQAtAG4nUfULXWEBBn_bs="
                 alt="Hand-block printing wooden block and fabric detail"
                 className="rounded-lg shadow-xl w-full h-full object-cover" />
             </div>
