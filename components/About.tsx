@@ -40,27 +40,28 @@ const About: React.FC = () => {
             <div className="relative z-10">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-serif font-bold mb-4 text-white">Why Hastakala?</h2>
+                        <h2 className="text-4xl font-serif font-bold mb-4 text-white">What is Hastakala Crafts?</h2>
                         <p className="text-lg text-white/90 leading-relaxed">
-                        We're more than a marketplace. We're a movement to empower artisans, preserve heritage, and connect you with the soul of India's crafts.
+                        A movement celebrating India’s makers.<br></br>
+                        Hastakala connects artisans to the world through honest trade, transparent storytelling, and design rooted in heritage.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <FeatureCard
                         icon={<FairPayIcon />}
-                        title="Direct & Fairly Priced"
-                        description="By connecting you directly with artisans, we eliminate middlemen, ensuring they receive the compensation they deserve for their incredible skill and hard work."
+                        title="Curated"
+                        description="India’s finest hands. Thoughtful, soulful, and handpicked—never mass-made."
                     />
                     <FeatureCard
                         icon={<CuratedIcon />}
-                        title="Authentically Curated"
-                        description="Every product on our platform is handpicked for its quality, authenticity, and the unique story it tells. Discover genuine crafts you won't find anywhere else."
+                        title="Fair Pay"
+                        description="Artisans earn what they truly deserve. No middlemen. No exploitation. Only dignity for skill."
                     />
                     <FeatureCard
                         icon={<SustainableIcon />}
-                        title="Sustainable & Story-Driven"
-                        description="We champion sustainable practices and the use of natural materials. Each purchase supports not just an artisan, but a family, a community, and a legacy."
+                        title="Sustainable"
+                        description="Crafted with conscience—embracing tradition while choosing materials that nurture tomorrow."
                     />
                     </div>
                 </div>

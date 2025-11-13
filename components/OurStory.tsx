@@ -38,21 +38,36 @@ const OurStory: React.FC = () => {
                         <div className="text-white">
                         <h2 className="text-4xl font-serif font-bold mb-4">Our Story</h2>
                         <p className="text-white/90 mb-8 leading-relaxed">
-                            Hastakala Crafts began when our founder witnessed artisans losing margin to multiple middlemen. What started as a simple idea—connecting makers directly with customers—has grown into a mission to preserve traditional crafts while ensuring fair compensation for artisans.
+                            Hastakala began with a simple realisation:
+                            India’s artisans create treasures, yet often earn the least.
+                            For decades, their craft passed through layers of middlemen while their names, identities, and stories were forgotten.
+                            We set out to rebuild that balance.
                         </p>
+                        <p className="text-white/90 mb-8 leading-relaxed">
+                            What started as a small idea—to connect makers directly with conscious buyers—has grown into a movement to restore dignity to handmade work. Today, Hastakala stands for fair trade, cultural preservation, and a digital bridge linking India’s timeless craft to a world eager to experience it.
+                        </p>
+                        
                         <blockquote className="bg-white/10 backdrop-blur-sm border-l-4 border-brand-brown p-6 mb-8">
-                            <p className="text-lg italic text-white">"We built Hastakala Crafts to make every handcrafted story find its rightful buyer."</p>
+                            <p className="text-lg italic text-white">"We built Hastakala so no artisan’s story gets lost in the noise of mass production"</p>
                             <footer className="mt-2 text-sm text-white/80">— Shaurya Mittal, Founder</footer>
                         </blockquote>
                         <div className="space-y-6">
                             <StoryStep number={1} title="THE PROBLEM">
-                                Artisans were losing 40-60% of their product value to middlemen and intermediaries.
+                                Artisans were losing 40–60% of their income to intermediaries.
+                                Their craft was celebrated, but their identities were erased.
                             </StoryStep>
                             <StoryStep number={2} title="OUR APPROACH">
-                                Direct marketplace with transparent pricing, storytelling, and logistics support for artisans.
+                                A direct marketplace built on:
+                                <ul className="list-disc list-inside">
+                                    <li>Authentic storytelling</li>
+                                    <li>Fair, transparent pricing</li>
+                                    <li>Tech-enabled logistics</li>
+                                </ul>
+                                All designed to return power—and profits—to the creators.
                             </StoryStep>
                             <StoryStep number={3} title="LAUNCH PLAN">
-                                Q1 2026 soft launch with 50 curated artisans, scaling to 500+ makers by year end.
+                                We’re launching in Q1 2026 with 50 handpicked artisans.
+                                Our vision: empower 500+ makers by year-end and build the go-to home for India’s next generation of creative entrepreneurs.
                             </StoryStep>
                         </div>
                     </div>

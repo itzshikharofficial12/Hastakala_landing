@@ -83,6 +83,10 @@ const JoinArtist: React.FC = () => {
                                     <input type="email" name="email" id="artist-email" placeholder="Email Address" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 bg-brand-gray/50 border border-transparent rounded-md focus:ring-2 focus:ring-brand-brown focus:border-brand-brown transition" />
                                 </div>
                                 <div>
+                                    <label htmlFor="artist-number" className="sr-only">Phone Number</label>
+                                    <input type="number" name="number" id="artist-number" placeholder="Phone Number" required value={formData.number} onChange={handleChange} className="w-full px-4 py-3 bg-brand-gray/50 border border-transparent rounded-md focus:ring-2 focus:ring-brand-brown focus:border-brand-brown transition" />
+                                </div>
+                                <div>
                                     <label htmlFor="artist-craft" className="sr-only">Your Craft / Artform</label>
                                     <input type="text" name="craft" id="artist-craft" placeholder="e.g., Block Printing, Pottery, Weaving" required value={formData.craft} onChange={handleChange} className="w-full px-4 py-3 bg-brand-gray/50 border border-transparent rounded-md focus:ring-2 focus:ring-brand-brown focus:border-brand-brown transition" />
                                 </div>

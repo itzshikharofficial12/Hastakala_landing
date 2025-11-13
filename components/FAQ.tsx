@@ -10,23 +10,19 @@ interface FAQItem {
 const faqData: FAQItem[] = [
     {
         question: "HOW DO YOU SELECT ARTISANS?",
-        answer: "Our curation team carefully vets each artisan based on craftsmanship, quality of materials, and authenticity of their technique. We prioritize unique stories and traditional skills passed down through generations."
+        answer: "Every artist is handpicked through a clear but thoughtful process. We look for authenticity, mastery, and a meaningful story—not just a product. Techniques, materials, and processes are reviewed to ensure high quality and ethical craftsmanship before joining Hastakala."
     },
     {
         question: "WHEN WILL YOU LAUNCH?",
-        answer: "We are targeting a soft launch in Q1 2026 with our first cohort of 50 artisans. Sign up for our waitlist to get notified and receive early access."
+        answer: "We’re preparing for a soft launch in Q1 2026, starting with a carefully curated group of ~50 artisans. This helps us perfect the experience before scaling to 500+ creators by the end of the year. For early access, simply join our waitlist."
     },
     {
         question: "HOW DOES SHIPPING WORK?",
-        answer: "We provide end-to-end logistics support for our artisans. When you place an order, it is carefully packaged by the maker and shipped directly to you through our trusted courier partners, ensuring it arrives safely and efficiently."
+        answer: "We manage logistics so artisans can focus on creation. Items are shipped directly from the artisan’s studio through trusted partners, with full tracking and eco-conscious packaging whenever possible."
     },
     {
         question: "HOW DO I JOIN AS A CUSTOMER OR ARTIST?",
-        answer: "To join as a customer, simply sign up for the waitlist on our homepage. To join as an artisan, please fill out the application form in the 'Join as an Artist' section. Our team will review your application and get in touch."
-    },
-    {
-        question: "HOW DO I JOIN AS A CUSTOMER OR ARTIST?",
-        answer: "To join as a customer, simply sign up for the waitlist on our homepage. To join as an artisan, please fill out the application form in the 'Join as an Artist' section. Our team will review your application and get in touch."
+        answer: "We welcome both artisans and craft lovers to our community. For artisans: Apply through our Join as an Artist page. Early artists enjoy zero listing fees and hands-on onboarding. For customers: Join our early-access list and be the first to explore unique crafts and meet their creators."
     }
 ];
 
