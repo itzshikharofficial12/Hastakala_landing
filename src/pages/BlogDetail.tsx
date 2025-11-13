@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactMarkdown from 'react-markdown';
 import { blogPosts } from '../data/blogData';
 
 const BlogDetail = () => {
@@ -65,9 +66,9 @@ const BlogDetail = () => {
       {/* Content */}
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <div className="prose max-w-none" data-aos="fade-up">
-          <p className="text-lg leading-relaxed text-gray-700">
-            {post.content}
-          </p>
+          <div className="text-lg leading-relaxed text-gray-700">
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
         </div>
 
         {/* Back Button */}

@@ -27,7 +27,7 @@ const JoinArtist: React.FC = () => {
             <div 
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: "url('Assests/Join as a Artist.png')",
+                    backgroundImage: "url('https://i.ibb.co/ZvZ3HMm/Join-as-a-Artist.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',

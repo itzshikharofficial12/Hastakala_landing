@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
             <div 
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: "url('Assets/FAQs.png')",
+                    backgroundImage: "url('https://i.ibb.co/hR9sy4k7/FAQs.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',

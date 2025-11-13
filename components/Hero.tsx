@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('Assests/Join as a Artist.png')",
+          backgroundImage: "url('https://i.ibb.co/ZvZ3HMm/Join-as-a-Artist.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -82,13 +82,13 @@ const Hero: React.FC = () => {
             HASTAKALA CRAFTS — A marketplace for handcrafted
           </h1>
           <br></br>
-          <span className="inline-block border-2 border-brand-brown/20 rounded-full px-4 py-1 text-sm font-semibold text-brand-brown tracking-wide mb-4 font-sans">
+          <span className="inline-block border-2 border-brand-brown/40 rounded-full px-10 py-1 text-sm font-semibold text-brand-brown tracking-wide mb-4 font-sans animate-pulse hover:animate-none hover:border-brand-brown/60 hover:shadow-[0_0_15px_rgba(168,85,20,0.5)] transition-all duration-500">
             • COMING SOON
           </span>
           <h2 className="mt-4 max-w-lg mx-auto lg:mx-0 text-lg text-black/90 leading-relaxed">
             Shop directly from India's finest artisans. Authentic. Fair. Story-driven.
           </h2>
-          <p className="mt-4 text-sm text-black/80">
+          <p className="mt-4 text-sm text-black/80 font-sans font-semibold tracking-wide mb-4   ">
             Launching Q1 2026 — Join our waitlist for early access & launch offers.
           </p>
 

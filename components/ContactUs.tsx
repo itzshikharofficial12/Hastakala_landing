@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
             <div 
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: "url('Assests/Contact Us.png')",
+                    backgroundImage: "url('https://i.ibb.co/NdJHkp9T/Contact-Us.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',

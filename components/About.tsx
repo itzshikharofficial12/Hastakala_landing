@@ -25,7 +25,7 @@ const About: React.FC = () => {
             <div 
                 className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: "url('Assests/Why Hastakala.png')",
+                    backgroundImage: "url('https://i.ibb.co/Y4K54wRz/Why-Hastakala.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
