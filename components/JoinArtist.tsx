@@ -5,6 +5,7 @@ const JoinArtist: React.FC = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        number: '',
         craft: '',
         portfolio: '',
     });
